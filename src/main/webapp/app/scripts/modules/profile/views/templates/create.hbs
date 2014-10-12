@@ -1,0 +1,117 @@
+<div class="page-headline">
+    <div class="row">
+        <div class="medium-6 columns">
+            <h4>{{translate "label.profile"}} / {{translate "label.create"}}</h4>
+        </div>
+    </div>
+</div>
+<div class="page">
+    <div class="row">
+        <div class="medium-12 columns" style="padding:5px">
+            <span>{{translate "message.fill.your.profile" }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-3 columns">
+            <form id="avatar-upload-form" runat="server">
+                <div class="user-avatar">
+                    <img id="avatar-preview" src="http://ultimate.com.ua/teams/photo/206963135553859cf9aba0e.jpeg"/>
+                    <div class="upload-avatar">
+                        <span><i class="fa fa-photo"></i> {{translate "label.upload.new.photo"}}</span>
+                    </div>
+                    <input hidden name="user_avatar" type='file' id="image_input"/>
+                </div>
+            </form>
+        </div>
+        <div class="medium-9 columns">
+            <div class="user-info">
+                <form id="edit-user" autocomplete="off">
+                    <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="first_name" class="inline">{{translate "label.firstname"}}<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <input type="text" name="firstName" id="first_name" value=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="last_name" class="inline">{{translate "label.lastname"}}<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <input type="text" name="lastName" id="last_name" value=""/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="sex" class="inline">{{translate "label.sex"}}<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <select type="text" name="sex" id="sex" value="">
+                                <option value="MALE">{{translate "label.male"}}</option>
+                                <option value="FEMALE">{{translate "label.female"}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="country" class="inline">{{translate "label.country"}}<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <select type="text" name="country" id="country" value="">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="city" class="inline">{{translate "label.city"}}<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <select type="text" name="city" id="city" value="">
+                            </select>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="dob" class="inline">{{translate "label.dob"}}<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <input type="date" name="dob" id="dob" value="">
+                        </div>
+                    </div> -->
+                    <div class="row contacts">
+                        <h4>{{translate "label.contacts"}}</h4>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="email" class="inline">Email<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <input type="text" name="email" id="email" value="">
+                        </div>
+                    </div> -->
+                    <!-- <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="skype" class="inline">Skype<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <input type="text" name="skype" id="skype" value="">
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="medium-3 columns">
+                            <label for="phone_number" class="inline">{{translate "label.phone"}}<label/>
+                        </div>
+                        <div class="medium-9 columns">
+                            <input type="text" name="phoneNumber" id="phone_number" value="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="medium-12 columns text-right">
+                            <button type="submit" class="button-action">{{translate "button.save"}}</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
